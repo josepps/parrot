@@ -1,12 +1,14 @@
 import React from 'react';
+import { RouterProvider } from "react-router-dom";
+
 import ReactDOM from 'react-dom/client';
-import Feed from './Feed';
-import Login from './Login';
+import router from './router';
 
 import "./Main.css"
 
+
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
-    <Login />
+    <RouterProvider router={router} />
   </React.StrictMode>
 )

@@ -1,4 +1,5 @@
 import { MainLogin } from './Login.style';
+import { Link } from "react-router-dom";
 
 function Login() {
 
@@ -16,7 +17,7 @@ function Login() {
                         <label htmlFor="Senha"></label>
                         <input type="password" aria-describedby='Senha' placeholder="senha"/>
                     </div>
-                    <button typeof="submit">entrar</button>
+                    <Link to='./Feed'>entrar</Link>
                 </form>
                 <a href="#">cadastre-se</a>
             </section>

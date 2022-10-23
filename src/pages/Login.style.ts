@@ -53,7 +53,7 @@ export const MainLogin = styled.main`
             }
             }
 
-            button {
+            a {
                 padding: 1.5% 23%;
                 border: none;
                 background: #76BB4C;

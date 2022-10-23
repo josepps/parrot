@@ -86,7 +86,6 @@ export const Main =styled.main`
 
         div {
             margin-left: 3%;
-            position: relative;
 
             h4 {
                 color: #76BB4C;
@@ -94,10 +93,11 @@ export const Main =styled.main`
 
             span {
                 font-size: 0.8rem;
-                position: absolute;
-                top: 41%;
-                left: 0;
                 color: #919191;
+            }
+
+            p {
+                margin-top: 2%;
             }
         }
     }
