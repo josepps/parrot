@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Header = styled.header`
-    max-width: 1440px;
+    /* max-width: 1440px; */
     height: 10vh;
     display: flex;
     justify-content: space-between;

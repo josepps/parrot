@@ -1,17 +1,12 @@
 import { Header, Main } from './Feed.style';
+import Navbar from "../componetes/Navbar/Navbar";
 
 
 function Feed() {
 
   return (
     <>
-      <Header>
-        <a href="#"><img className='logoHeader' src="../img/logoLorizontalColorido.png" alt="Logo da parrot" /></a>
-        <nav className='navHeader'>
-          <a href="#">Olá, usuário |</a>
-          <a href="#">sair</a>
-        </nav>
-      </Header>
+      <Navbar/>
       <Main>
         <section className='formPublicação'>
           <img src="../img/iconeHomem.png" alt="Imagem de homem" />
