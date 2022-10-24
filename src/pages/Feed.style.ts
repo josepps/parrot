@@ -30,6 +30,19 @@ export const Header = styled.header`
         color: #6033AA;
         font-size: 1.2rem;
     }
+
+    @media (max-width: 650px) {
+    
+        .logoHeader {
+        height: 6vh;
+    }
+
+        .navHeader {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    }
 `;
 
 export const Main =styled.main`
@@ -99,6 +112,33 @@ export const Main =styled.main`
             p {
                 margin-top: 2%;
             }
+        }
+    }
+
+    @media (max-width: 650px) {
+
+        .formPublicação {
+        form {
+            height: 10vh;
+            position: relative;
+
+            button {
+                position: absolute;
+                top: 80%;
+                right: 0;
+            }
+           
+        }}
+
+        .pulblicaçõesFeed {
+            flex-direction: column;
+            
+            div {
+                flex-direction: column;
+                display: flex;
+                align-items: center;
+            }
+        
         }
     }
 `;

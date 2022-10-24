@@ -65,6 +65,22 @@ export const MainLogin = styled.main`
         a {
             color: #555555;
             text-decoration: none;
+        }    
+    }
+
+    @media (max-width: 900px) {
+        section {
+            width: 40vw;
+        }
+        
+    }
+
+    @media (max-width: 550px) {
+
+    background:rgba(0, 0, 0, 0.8) url(./img/BACKGROUND.png);
+
+        section {
+            width: 70vw;
         }
     }
 `;
