@@ -4,7 +4,9 @@ function Perfil(){
     return(
         <>
             <Navbar/>
+            teste
         </>
+        
     )
 }
 
