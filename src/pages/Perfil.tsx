@@ -1,14 +1,11 @@
 import Navbar from "../componetes/Navbar/Navbar";
 import { NaoPostou } from "./Perfil.style";
 
-
-
-
-
 function Perfil() {
+  
     return (
         <>
-            <Navbar/>
+        <Navbar/>
         <NaoPostou className="feedUserTimeline">
         <p>Você ainda não fez nenhuma publicação :(</p>
           <img
@@ -16,13 +13,8 @@ function Perfil() {
             width="200px"
             src="../..//public/img/iconeopaco.png"
           />
-         
         </NaoPostou>
-        
-          
-           
         </>
-
     )
 }
 
