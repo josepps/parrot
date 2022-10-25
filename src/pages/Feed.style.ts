@@ -46,11 +46,11 @@ export const Header = styled.header`
 `;
 
 export const Main =styled.main`
-    max-width: 1440px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+   
 
     .formPublicação {
         width: 60%;

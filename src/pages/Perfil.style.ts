@@ -18,8 +18,5 @@ export const NaoPostou = styled.div`
     font-size: 1.5rem;
     color: #909090;
     font-weight: 700;
-;
-    
-  }
-
+    ;}
 `;
