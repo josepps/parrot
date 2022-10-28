@@ -4,6 +4,7 @@ import Feed from "../pages/Feed";
 import Login from "../pages/Login";
 import Perfil from "../pages/Perfil";
 import PerfilUsuario from "../pages/PerfilUsuario";
+import Cadastro from "../pages/Cadastro";
 
 const router = createBrowserRouter([
   {
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
   {
     path: "/perfilusuario",
     element: <PerfilUsuario />,
+  },
+  {
+    path: "/Cadastrousuario",
+    element: <Cadastro />,
   },
 ]);
 
