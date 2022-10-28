@@ -1,19 +1,32 @@
 import { MainLogin } from './Cadastro.style';
 import { Link } from "react-router-dom";
+import api from '../services/api';
 
-type CadastroProps = {
-    name: string;
-    email: string;
-    apartment: number;
-    password: string
-};
+
+const inputNome = document.querySelector('#nome');
+const inputEmail = document.querySelector('#email');
+const inputSenha = document.querySelector('#senha');
+const inputAp = document.querySelector('#ap');
 
 function Cadastro() {
 
-    const btnCadastra = document.getElementById("cadastrar")?.addEventListener("click", ()=>{
-        console.log("Clicou")
-    })
+    const BtnCadastrar = document.getElementById("cadastrar");
+    BtnCadastrar?.addEventListener("click", (event)=> {
+        event.preventDefault();
 
+        api.post('/user', {
+            "name": inputNome?.value,
+            "email": inputEmail?.value,
+            "password": inputSenha?.value,
+            "apartment": inputAp?.value
+          })
+          .then(function (response) {
+            console.log(response);
+          })
+          .catch(function (error) {
+            console.error(error);
+          });
+    });
     return (
         <MainLogin>
             <section>
@@ -22,15 +35,15 @@ function Cadastro() {
                 <form >
                     <div>
                         <label htmlFor="Nome"></label>
-                        <input type="text" aria-describedby='Nome' placeholder="Nome"/>
+                        <input id='nome' type="text" aria-describedby='Nome' placeholder="Nome"/>
                     </div>
                     <div>
                         <label htmlFor="Email"></label>
-                        <input type="email" aria-describedby='Email' placeholder="email"/>
+                        <input id='email' type="email" aria-describedby='Email' placeholder="email"/>
                     </div>
                     <div>
                         <label htmlFor="Senha"></label>
-                        <input type="password" aria-describedby='Senha' placeholder="senha"/>
+                        <input id='senha' type="password" aria-describedby='Senha' placeholder="senha"/>
                     </div>
                     <div>
                         <label htmlFor="Senha"></label>
@@ -38,7 +51,7 @@ function Cadastro() {
                     </div>
                     <div>
                         <label htmlFor="Unidade"></label>
-                        <input type="text" aria-describedby='Unidade' placeholder="unidade/apartamento"/>
+                        <input id='ap' type="text" aria-describedby='Unidade' placeholder="unidade/apartamento"/>
                     </div>
                     <div>
                         <label htmlFor="Link"></label>
